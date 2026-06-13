@@ -1,0 +1,21 @@
+/* src/index.css
+   Tailwind base directives — this is the ONLY place they go.
+   Import this file in main.jsx (already done by Vite default).
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Global resets ── */
+/* *, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0b0b18;
+  color: #ffffff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+} */
