@@ -131,7 +131,7 @@ export default function EnquiryForm() {
   if (submitted) {
     return (
       <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
-        <div className="bg-white rounded-xl border border-gray-200 shadow p-10 w-full max-w-md text-center">
+        <div className="bg-white rounded-xl border border-gray-200 shadow p-5  sm:p-10 w-full max-w-md text-center">
           <h2 className="text-xl font-bold text-green-600 mb-2">Form Submitted!</h2>
           <p className="text-gray-500 text-sm mb-6">
             Thanks <strong>{form.firstName}</strong>! We will contact you at <strong>{form.email}</strong>
@@ -145,8 +145,8 @@ export default function EnquiryForm() {
   }
 
   return (
-    <div className="min-h-screen  flex items-center justify-center p-4">
-      <div className="bg-white rounded-xl border border-gray-200 shadow p-8 w-full max-w-4xl">
+    <div className="min-h-screen  flex items-center justify-center p-2 sm:p-4">
+      <div className="bg-white rounded-xl border border-gray-200 shadow p-4 sm:p-8 w-full max-w-4xl">
 
         <h1 className="text-2xl font-bold text-gray-800 text-center mb-1">Contact Us</h1>
         <p className="text-gray-400 text-sm text-center mb-6">Fill the form and we will get back to you</p>
@@ -158,7 +158,7 @@ export default function EnquiryForm() {
             <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white ${step > 1 ? "bg-green-500" : "bg-blue-600"}`}>
               {step > 1 ? "✓" : "1"}
             </div>
-            <span className={`text-xs mt-1 ${step === 1 ? "text-blue-600 font-semibold" : "text-gray-400"}`}>Personal</span>
+            <span className={`text-xs mt-1 hidden sm:block text-gray-400 ${step === 1 ? "text-blue-600 font-semibold" : "text-gray-400"}`}>Personal</span>
           </div>
 
           <div className={`flex-1 h-1 mx-2 rounded ${step > 1 ? "bg-green-400" : "bg-gray-200"}`} />
@@ -167,7 +167,7 @@ export default function EnquiryForm() {
             <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white ${step > 2 ? "bg-green-500" : step === 2 ? "bg-blue-600" : "bg-gray-300"}`}>
               {step > 2 ? "✓" : "2"}
             </div>
-            <span className={`text-xs mt-1 ${step === 2 ? "text-blue-600 font-semibold" : "text-gray-400"}`}>Enquiry</span>
+            <span className={`text-xs mt-1 hidden sm:block text-gray-400 ${step === 2 ? "text-blue-600 font-semibold" : "text-gray-400"}`}>Enquiry</span>
           </div>
 
           <div className={`flex-1 h-1 mx-2 rounded ${step > 2 ? "bg-green-400" : "bg-gray-200"}`} />
@@ -176,7 +176,7 @@ export default function EnquiryForm() {
             <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold text-white ${step === 3 ? "bg-blue-600" : "bg-gray-300"}`}>
               3
             </div>
-            <span className={`text-xs mt-1 ${step === 3 ? "text-blue-600 font-semibold" : "text-gray-400"}`}>Message</span>
+            <span className={`text-xs mt-1 hidden sm:block text-gray-400 ${step === 3 ? "text-blue-600 font-semibold" : "text-gray-400"}`}>Message</span>
           </div>
 
         </div>
@@ -186,7 +186,7 @@ export default function EnquiryForm() {
           <div>
             <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Personal Information</p>
 
-            <div className="grid grid-cols-2 gap-3 mb-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3">
               <div>
                 <label className="block text-sm font-medium text-gray-600 mb-1">First Name</label>
                 <input

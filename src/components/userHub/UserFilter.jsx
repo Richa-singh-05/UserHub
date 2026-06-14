@@ -1,4 +1,3 @@
-
 export default function UserFilter({
   searchText,
   setSearchText,
@@ -16,6 +15,7 @@ export default function UserFilter({
           setSearchText(e.target.value)
         }
         className="w-full border border-gray-300 rounded-lg px-4 py-3 mb-4 bg-white outline-none focus:border-grey-500"/>
+       
         {/*============ Filter buttons: All Users, Online Only, Recently ------------ */}
        <div className="flex flex-wrap gap-2">
        <button
