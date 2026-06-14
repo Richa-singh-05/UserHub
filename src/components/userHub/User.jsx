@@ -54,7 +54,7 @@ export default function UserHub() {
       setError("");
 
       const response = await fetch(
-        "https://randomuser.me/api/?results=12"
+        "https://randomuser.me/api/?results=12&nat=us"
       );
 
       if (!response.ok) {
@@ -142,7 +142,7 @@ export default function UserHub() {
         <div className="flex flex-wrap gap-2 mb-6">
           <button
             onClick={() => setFilter("all")}
-            className={`px-4 py-2 rounded-lg border ${
+            className={`px-2 sm:px-4 py-2 rounded-lg border ${
               filter === "all"
                 ? "bg-blue-500 text-white border-blue-500"
                 : "bg-white border-gray-300"
@@ -151,7 +151,7 @@ export default function UserHub() {
             All Users </button>
           <button
             onClick={() => setFilter("online")}
-            className={`px-4 py-2 rounded-lg border ${
+            className={`px-2 sm:px-4 py-2  rounded-lg border ${
               filter === "online"
                 ? "bg-blue-500 text-white border-blue-500"
                 : "bg-white border-gray-300"
@@ -160,7 +160,7 @@ export default function UserHub() {
             Online Only </button>
           <button
             onClick={() => setFilter("recent")}
-            className={`px-4 py-2 rounded-lg border ${
+            className={`px-2 sm:px-4 py-2  rounded-lg border ${
               filter === "recent"
                 ? "bg-blue-500 text-white border-blue-500"
                 : "bg-white border-gray-300"
