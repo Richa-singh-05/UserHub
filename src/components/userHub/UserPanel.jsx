@@ -128,12 +128,12 @@ export default function UserPanel() {
           onChange={(e) =>
             setSearch(e.target.value)
           }
-          className="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 mb-4 outline-none focus:border-blue-500" /> 
-         <button onClick={() => { setSearch(""); setFilter("all"); }}
-  className="px-2 sm:px-4 py-2 rounded-lg border bg-white border-gray-300 hover:bg-gray-100 hover:border-gray-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors"
+          className="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 mb-1 sm:mb-4 outline-none focus:border-blue-500" /> 
+         <div className="flex justify-end "><button onClick={() => { setSearch(""); setFilter("all"); }}
+  className=" w-full sm:w-[100px] px-2 sm:px-4 py-2 mb-5  sm:mb-3 rounded-lg border bg-white border-gray-300 hover:bg-blue-100 hover:border-gray-400 focus:outline-none focus:bg-blue-100  focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors"
 >
-  Reset
-</button>
+  Refresh
+</button></div>
         <div className="flex flex-wrap gap-2 mb-6">
           <button
             onClick={() => setFilter("all")}
