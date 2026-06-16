@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import UserCard from "./UserCard";
 
-export default function UserHub() {
+export default function UserPanel() {
   const [users, setUsers] = useState([]);
   const [displayedUsers, setDisplayedUsers] = useState([]);
   const [search, setSearch] = useState("");
